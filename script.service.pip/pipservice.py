@@ -211,6 +211,9 @@ if __name__ == '__main__':
 
             if monitor.get_toggle_status():
                 if ffmpeg.started():
+                    # switch back to pip channel
+                    channelname = m3u.get_channel_name()
+                    m3u.switch_channel(channelname)
                     # stop picture in picture capturing
                     ffmpeg.stop()
                     xbmc.log("[pip-service] stopped ffmpeg process.", xbmc.LOGDEBUG)
@@ -232,10 +235,6 @@ if __name__ == '__main__':
 
 
             if monitor.get_channel_back_status():
-                # switch back to pip channel
-                channelname = m3u.get_channel_name()
-                m3u.switch_channel(channelname)
-
                 # stop picture in picture capturing
                 ffmpeg.stop()
                 xbmc.log("[pip-service] stopped ffmpeg process.", xbmc.LOGDEBUG)
