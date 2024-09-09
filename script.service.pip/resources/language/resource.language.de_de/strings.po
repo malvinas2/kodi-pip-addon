@@ -106,7 +106,7 @@ msgstr "Verwendung: '[ctrl+][shift+]key (benötigt Neustart)'"
 
 msgctxt "#32022"
 msgid "Enable/disable PIP"
-msgstr "Aktiviere/Deaktiviere PIP PIP"
+msgstr "Aktiviere/Deaktiviere PIP"
 
 msgctxt "#32023"
 msgid "Back to channel"
