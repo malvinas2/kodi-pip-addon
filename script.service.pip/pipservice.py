@@ -223,8 +223,7 @@ if __name__ == '__main__':
                     url, channelname = m3u.get_url()
 
                     if url == "":
-                        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, "No URL found ...", 2000, __icon__))
-                        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, "Not started ...", 2000, __icon__))
+                        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, __addon__.getLocalizedString(32040), 4000, __icon__))
                     else:
                         channelnumber = m3u.channel2number[channelname]
                         pip.set_channel(channelname, channelnumber)
@@ -316,13 +315,13 @@ if __name__ == '__main__':
 
     # report some error infos to user
     if not ffmpeg.test():
-        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, "No ffmpeg executable found ...", 2000, __icon__))
+        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, __addon.getLocalizedString(32041), 2000, __icon__))
         xbmc.log("[pip-service] no ffmpeg executable available!", xbmc.LOGERROR)
 
     if not pip.get_settings_status():
-        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, "Create a ramdisk and use it as temporary folder in the addon configuration.", 2000, __icon__))
-        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, "Using a temporary folder on a ramdisk is highly recommended ", 2000, __icon__))
-        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, "to avoid too many write accesses to the harddisc!", 2000, __icon__))
+        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, __addon.getLocalizedString(32042), 2000, __icon__))
+        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, __addon.getLocalizedString(32043), 2000, __icon__))
+        xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__, __addon.getLocalizedString(32044), 2000, __icon__))
 
 
     # clean up before exit

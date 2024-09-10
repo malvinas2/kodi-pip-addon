@@ -127,3 +127,23 @@ msgstr "Sonstige Einstellungen"
 msgctxt "#32031"
 msgid "Startup delay before action [seconds]"
 msgstr "Start-Verzögerung [Sekunden]"
+
+msgctxt "#32040"
+msgid "This channel does not support the PiP-function. "
+msgstr "Dieser Sender unterstützt keine Bild-in-Bild Funktion. "
+
+msgctxt "#32041"
+msgid "No ffmpeg executable found. "
+msgstr "FFMPEG nicht gefunden. "
+
+msgctxt "#32042"
+msgid "Create a ramdisk and use it as temporary folder in the addon configuration. "
+msgstr "Erstellen Sie in den Addon-Einstellungen eine RAM-Disk und benutzen sie als temporären Speicher. "
+
+msgctxt "#32043"
+msgid "Using a temporary folder on a ramdisk is highly recommended, "
+msgstr "Die Verwendung eines temporären Ordners auf einer RAM-Disk wird dringend empfohlen, "
+
+msgctxt "#32044"
+msgid "to avoid too many write accesses to the harddisc!"
+msgstr "um zu viele Schreibzugriffe auf die Festplatte zu vermeiden! "
